@@ -1,0 +1,25 @@
+export const ADD_USER = 'ADD_USER'
+export const REMOVE_USER = 'REMOVE_USER'
+export const SET_USERS = 'SET_USERS'
+export const SET_THEME_COLOR = 'SET_THEME_COLOR'
+
+
+export const LOGIN_BEGIN = 'LOGIN_BEGIN'
+export const LOGIN_FAILURE = 'LOGIN_FAILURE'
+export const LOGIN_SUCCESS = 'LOGIN_SUCCESS'
+export const LOGOUT = 'LOGOUT'
+export const REMOVE_TOKEN = 'REMOVE_TOKEN'
+export const SET_TOKEN = 'SET_TOKEN'
+export const SET_USER = 'SET_USER'
+export const SET_FULL_USER = 'SET_FULL_USER'
+export const PASSWORD_CHANGE_FAILURE = 'PASSWORD_CHANGE_FAILURE'
+export const PASSWORD_CHANGE_SUCCESS = 'PASSWORD_CHANGE_SUCCESS'
+export const SET_ERROR = 'SET_ERROR'
+
+export const ADD_SHOP = 'ADD_SHOP'
+export const REMOVE_SHOP = 'REMOVE_SHOP'
+export const SET_SHOPS = 'SET_SHOPS'
+
+export const ADD_SHOPCLIENT = 'ADD_SHOPCLIENT'
+export const REMOVE_SHOPCLIENT = 'REMOVE_SHOPCLIENT'
+export const SET_SHOPCLIENTS = 'SET_SHOPCLIENTS'

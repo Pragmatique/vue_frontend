@@ -1,32 +1,39 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+  <div>
+    <template>
+      <v-app id="inspire">
+        <div class="app-container">
+          <toolbar :key="$route.params.userId" @toggleNavigationBar="drawer = !drawer"/>
+          <navigation :toggle="drawer"/>
+          <v-content>
+            <breadcrumbs> </breadcrumbs>
+            <router-view> </router-view>
+          </v-content>
+        </div>
+      </v-app>
+    </template>
   </div>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script>
+import Navigation from '@/components/core/NavigationDrawer';
+import Toolbar from '@/components/core/Toolbar';
 
-#nav {
-  padding: 30px;
+export default {
+  name: 'App',
+  components: {
+      Navigation,
+      Toolbar
+  },
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
+  data() {
+    return {
+      drawer: true
     }
   }
+
 }
+</script>
+
+<style>
 </style>

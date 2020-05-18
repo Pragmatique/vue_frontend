@@ -3,6 +3,8 @@ import Vuetify from 'vuetify/lib'
 import 'material-design-icons-iconfont/dist/material-design-icons.css'
 //import "vue-swatches/dist/vue-swatches.min.css"
 
+
+
 Vue.use(Vuetify)
 
 export default new Vuetify({

@@ -36,3 +36,6 @@ Only ADMINs can see information on the ShopManager page. Admins can add or delet
 ![Alt text](shops.jpg?raw=true "shops")
 ![Alt text](shops2.jpg?raw=true "shops2")
 
+Application parameters are flexible:
+![Alt text](flexible.jpg?raw=true "flexible")
+

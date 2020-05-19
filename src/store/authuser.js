@@ -190,13 +190,13 @@ const actions = {
     try {
       commit(LOGIN_BEGIN)
       const data = await auth.login(payload.email, payload.password)
-      console.log(data)
+      //console.log(data)
       commit(SET_TOKEN, data.data.token)
 
       localStorage.setItem(CURRENT_USER_ID, data.data.user.id)
       commit(SET_USER, data.data.user)
       commit(LOGIN_SUCCESS)
-      console.log(data.data.user.id)
+      //console.log(data.data.user.id)
     } catch (error) {
       commit(LOGIN_FAILURE, error.message)
     }
@@ -239,11 +239,11 @@ const actions = {
   async getCurrentUser ({ commit }) {
     try {
       commit(SET_ERROR, null)
-      console.log(state.userId)
+      //console.log(state.userId)
       const user = await User.get(state.userId)
-      console.log(user)
+      //console.log(user)
       commit(SET_USER, user.data)
-      console.log(state.user)
+      //console.log(state.user)
     } catch (error) {
       console.error(error)
       commit(SET_ERROR, error.message)

@@ -130,8 +130,6 @@ export default {
       }
     },
     async load_data() {
-      console.log(this.$store)
-      console.log('!!')
       user = this.$store.state.authuser.user
       this.userEmail = user.email
       this.first_name = user.first_name,
@@ -144,7 +142,7 @@ export default {
     if (!this.$store.state.authuser.user){
         this.$store.dispatch('authuser/getCurrentUser',null,{root:true})
     }
-    console.log(this.$store.state.authuser.user)
+    //console.log(this.$store.state.authuser.user)
   }
 }
 </script>

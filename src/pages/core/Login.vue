@@ -82,7 +82,7 @@ export default {
 
       let email = this.userEmail;
       let password = this.password;
-      console.log(email, password);
+      //console.log(email, password);
       await this.$store.dispatch('authuser/login', {
         email: email,
         password: password

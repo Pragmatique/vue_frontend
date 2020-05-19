@@ -135,7 +135,7 @@ export default {
       let first_name = this.first_name;
       let last_name = this.last_name;
       let date_of_birth = this.date_of_birth;
-      console.log(email, password);
+      //console.log(email, password);
       await this.$store.dispatch('authuser/createUser', {
         email: email,
         password: password,
